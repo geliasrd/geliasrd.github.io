@@ -1,5 +1,5 @@
 html{
-    font-family: 'Krub', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 * {
@@ -10,98 +10,117 @@ html{
 
 body{
     display: flex;
-    flex-direction: column;
-    flex: 1;
+    /* flex-direction: column; */
+    /* flex: 1; */
     align-items: center;
     justify-content: center;
-    background: #c2c2c2;
+    background: whitesmoke;
     -webkit-font-smoothig: antialiased;
 }
 
-
-
-.sidenav {
-    height: 100%; 
-    width: 488px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 136, 0, 0.6);
-    overflow-x: hidden;
-    padding-top: 20px;
+.centernav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; 
+    width: 100vw;
+    /* position: fixed; */
+    /* z-index: 1; */
+    /* top: 0; */
+    /* left: 0; */
+    /* overflow-x: hidden; */
+    /* padding-top: 20px; */
   }
 
-.sidenav h1{
-    font-weight: 400;
-    font-size: 32px;
+.nome {
+    display: flex;
+    /* flex: 1; */
+    /* padding: 4vh 0 2vh 0; */
+    font-size: 5rem;
+    background-color: rgba(255, 165, 0);
+    width: 100vw;
+    height: 28vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nomeum {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    color: whitesmoke;
+}
+
+.nomedois {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
+    color: whitesmoke;
+    text-indent: 2.4rem;
+}
+
+.sobre {
     text-align: center;
-    padding: 8px 0;
-    border-bottom: 1px solid #000;
-  }
+    font-size: 3.2rem;
+    color: #000;
+    margin: 8vh 0 4vh 0;
+}
 
-  .sidenav h2{
-    font-weight: 400;
-    font-size: 28px;
-    text-align: center;
-    padding: 8px 0;
-  }
-  
-  
-.sidenav a {
-    padding: 8px 0;
+.like {
+    font-size: 3rem;
+}
+
+.curriculo {
     text-decoration: none;
-    font-size: 25px;
     color: #000;
     display: block;
     text-align: center;
     transition: 0.4s;
-  }
-  
-.sidenav a:hover {
+    font-size: 2.8rem;
+    margin-top: 8vh;
+}
+
+.curriculo:hover {
     opacity: 38%;
   }
 
-.sidenav h1 img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
+.sobre {
+
 }
 
+.curso
 
 
-.sidenav footer {
+.centernav footer {
     display: flex;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
+    width: 100vw;
+    height: 4vh;
     border: 0;
-    margin-top: 48px;
     align-items: center;
     justify-content: center;
-    background-color:  rgba(255, 136, 0, 0);
+    background-color:  rgba(255, 165, 0, 0);
 }
 
-.sidenav footer ul {
+.centernav footer ul {
     display: flex;
+    margin-top: 8vh;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     list-style:none;
 }
 
-.sidenav footer ul li a {
+.centernav .icon {
     display: flex;
     flex: 1;
-    margin: 90px 10px;
+    margin: 4vh 2vh;
 }
 
-.sidenav footer ul li a img {
-    height: 40px;
-    width: 40px;
+.centernav .icon img {
+    height: 3.5rem;
+    width: 3.5rem;
     transition: 0.3s;
 }
 
-.sidenav footer ul li a img:hover {
+.centernav .icon img:hover {
     opacity: 70%;
 }
